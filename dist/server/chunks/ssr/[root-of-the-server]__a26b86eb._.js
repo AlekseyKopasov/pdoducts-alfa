@@ -24,44 +24,32 @@ const mod = __turbopack_context__.x("next/dist/server/app-render/work-unit-async
 
 module.exports = mod;
 }}),
-"[project]/src/app/products/[id]/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/app/products/[id]/ProductClient.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>ProductDetailPage),
-    "generateStaticParams": (()=>generateStaticParams)
+    "default": (()=>ProductClient)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$products$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/store/products.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/navigation.js [app-ssr] (ecmascript)");
 'use client';
 ;
 ;
 ;
 ;
-;
-async function generateStaticParams() {
-    const res = await fetch('https://fakestoreapi.com/products');
-    const products = await res.json();
-    // eslint-disable-next-line
-    return products.map((product)=>({
-            id: product.id.toString()
-        }));
-}
-function ProductDetailPage() {
-    const params = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useParams"])();
+function ProductClient({ id }) {
     const { allProducts } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$store$2f$products$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useProductsStore"])();
-    const product = allProducts.find((p)=>p.id === Number(params.id));
+    const product = allProducts.find((p)=>p.id === Number(id));
     if (!product) {
         return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             children: "Product not found"
         }, void 0, false, {
-            fileName: "[project]/src/app/products/[id]/page.tsx",
-            lineNumber: 24,
+            fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+            lineNumber: 12,
             columnNumber: 12
         }, this);
     }
@@ -73,8 +61,8 @@ function ProductDetailPage() {
                 className: "mb-4 inline-block text-blue-500",
                 children: "Return back"
             }, void 0, false, {
-                fileName: "[project]/src/app/products/[id]/page.tsx",
-                lineNumber: 29,
+                fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+                lineNumber: 17,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -87,24 +75,24 @@ function ProductDetailPage() {
                         height: 200,
                         className: "w-full h-64 object-contain mb-6"
                     }, void 0, false, {
-                        fileName: "[project]/src/app/products/[id]/page.tsx",
-                        lineNumber: 32,
+                        fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+                        lineNumber: 20,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                         className: "text-3xl font-bold mb-4",
                         children: product.title
                     }, void 0, false, {
-                        fileName: "[project]/src/app/products/[id]/page.tsx",
-                        lineNumber: 39,
+                        fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+                        lineNumber: 27,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "text-gray-600 mb-4",
                         children: product.description
                     }, void 0, false, {
-                        fileName: "[project]/src/app/products/[id]/page.tsx",
-                        lineNumber: 40,
+                        fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+                        lineNumber: 28,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -114,20 +102,20 @@ function ProductDetailPage() {
                             product.price
                         ]
                     }, void 0, true, {
-                        fileName: "[project]/src/app/products/[id]/page.tsx",
-                        lineNumber: 41,
+                        fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/src/app/products/[id]/page.tsx",
-                lineNumber: 31,
+                fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+                lineNumber: 19,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/src/app/products/[id]/page.tsx",
-        lineNumber: 28,
+        fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
+        lineNumber: 16,
         columnNumber: 5
     }, this);
 }
@@ -135,4 +123,4 @@ function ProductDetailPage() {
 
 };
 
-//# sourceMappingURL=%5Broot-of-the-server%5D__b362553a._.js.map
+//# sourceMappingURL=%5Broot-of-the-server%5D__a26b86eb._.js.map
