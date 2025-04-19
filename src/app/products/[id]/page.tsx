@@ -1,5 +1,5 @@
 import ProductClient from './ProductClient';
-import type { PageParams } from '@/app/types';
+import type { PageProps } from '@/app/types';
 
 export async function generateStaticParams() {
   const res = await fetch('https://fakestoreapi.com/products');
@@ -11,6 +11,6 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProductPage({ params }: PageParams<{ id: string }>) {
+export default function ProductPage({ params }: PageProps<{ id: string }>) {
   return <ProductClient id={params.id} />;
 }
