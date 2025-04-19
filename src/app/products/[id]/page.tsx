@@ -1,5 +1,5 @@
 import ProductClient from './ProductClient';
-import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   const res = await fetch('https://fakestoreapi.com/products');
@@ -18,9 +18,9 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 export async function generateMetadata({
   params,
 }: {
-  params: { id: string };
-}): Promise<Metadata> {
+  params: { id: string }
+}) {
   return {
     title: `Product ${params.id}`,
   };
-}
+};
