@@ -1,5 +1,4 @@
 import ProductClient from './ProductClient';
-import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
   const res = await fetch('https://fakestoreapi.com/products');
