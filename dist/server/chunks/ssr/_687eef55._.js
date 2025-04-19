@@ -81,7 +81,7 @@ function ProductPage({ params }) {
         id: params.id
     }, void 0, false, {
         fileName: "[project]/src/app/products/[id]/page.tsx",
-        lineNumber: 16,
+        lineNumber: 15,
         columnNumber: 10
     }, this);
 }

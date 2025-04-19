@@ -1,4 +1,3 @@
-import { Product } from '@/store/products';
 import ProductClient from './ProductClient';
 import type { PageParams } from '@/app/types';
 
