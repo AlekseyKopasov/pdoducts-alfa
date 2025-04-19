@@ -49,7 +49,7 @@ function ProductClient({ id }) {
             children: "Product not found"
         }, void 0, false, {
             fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-            lineNumber: 12,
+            lineNumber: 16,
             columnNumber: 12
         }, this);
     }
@@ -62,7 +62,7 @@ function ProductClient({ id }) {
                 children: "Return back"
             }, void 0, false, {
                 fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-                lineNumber: 17,
+                lineNumber: 21,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -76,7 +76,7 @@ function ProductClient({ id }) {
                         className: "w-full h-64 object-contain mb-6"
                     }, void 0, false, {
                         fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-                        lineNumber: 20,
+                        lineNumber: 24,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -84,7 +84,7 @@ function ProductClient({ id }) {
                         children: product.title
                     }, void 0, false, {
                         fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-                        lineNumber: 27,
+                        lineNumber: 31,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -92,7 +92,7 @@ function ProductClient({ id }) {
                         children: product.description
                     }, void 0, false, {
                         fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-                        lineNumber: 28,
+                        lineNumber: 32,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -103,19 +103,19 @@ function ProductClient({ id }) {
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-                        lineNumber: 29,
+                        lineNumber: 33,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-                lineNumber: 19,
+                lineNumber: 23,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/products/[id]/ProductClient.tsx",
-        lineNumber: 16,
+        lineNumber: 20,
         columnNumber: 5
     }, this);
 }

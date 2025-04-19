@@ -4,7 +4,11 @@ import { useProductsStore } from '@/store/products'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ProductClient({ id }: { id: string }) {
+interface ProductClientProps {
+  id: string;
+}
+
+export default function ProductClient({ id }: ProductClientProps) {
   const { allProducts } = useProductsStore()
   const product = allProducts.find(p => p.id === Number(id))
 

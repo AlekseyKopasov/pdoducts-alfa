@@ -71,6 +71,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$products$2f5b$
 async function generateStaticParams() {
     const res = await fetch('https://fakestoreapi.com/products');
     const products = await res.json();
+    // eslint-disable-next-line
     return products.map((product)=>({
             id: product.id.toString()
         }));
@@ -80,7 +81,7 @@ function ProductPage({ params }) {
         id: params.id
     }, void 0, false, {
         fileName: "[project]/src/app/products/[id]/page.tsx",
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 10
     }, this);
 }
