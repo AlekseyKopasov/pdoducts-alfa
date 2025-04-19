@@ -1,5 +1,5 @@
 import ProductClient from './ProductClient';
-import type { PageProps } from '@/app/types';
+import type { Metadata } from 'next';
 
 export async function generateStaticParams() {
   const res = await fetch('https://fakestoreapi.com/products');
@@ -11,6 +11,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProductPage({ params }: PageProps<{ id: string }>) {
+export default function ProductPage({ params }: { params: { id: string } }) {
   return <ProductClient id={params.id} />;
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
+  return {
+    title: `Product ${params.id}`,
+  };
 }
