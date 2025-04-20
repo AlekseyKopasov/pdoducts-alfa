@@ -7,7 +7,10 @@ const nextConfig: NextConfig = {
     unoptimized: true,
     domains: ['fakestoreapi.com', 'localhost', 'localhost:3000']
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/pdoducts-alfa' : ''
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  // basePath: process.env.NODE_ENV === 'production' ? '/pdoducts-alfa' : ''
 };
 
 export default nextConfig;

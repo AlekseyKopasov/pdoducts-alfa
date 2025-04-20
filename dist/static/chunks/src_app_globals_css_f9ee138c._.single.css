@@ -342,6 +342,10 @@
     right: calc(var(--spacing) * 2);
   }
 
+  .isolate {
+    isolation: isolate;
+  }
+
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
